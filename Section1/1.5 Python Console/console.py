@@ -1,17 +1,25 @@
+import math
+
+
 class Calculator:
     def __init__(self):
         pass
 
-    def add(self, a, b):
+    @staticmethod
+    def add(a, b):
         return a + b
 
-    def divide(self, a, b):
+    @staticmethod
+    def divide(a, b):
         return a / b
 
-    # Todo: Add subtract option
+    @staticmethod
+    def subtract(a, b):
+        return a - b
 
-    # def root(a):
-    #   return math.sqrt()
+    @staticmethod
+    def root(a):
+        return math.sqrt(a)
 
 
 def greetings(name):
@@ -23,8 +31,7 @@ def goodbye():
 
 
 myCalculator = Calculator
-myCalculator.subtract()
-
+myCalculator.subtract(5, 3)
 
 # execfile('console.py')
 # exec('console.py')
